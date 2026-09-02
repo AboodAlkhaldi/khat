@@ -17,13 +17,15 @@ export default function SiteHeader() {
     <header className={`header${scrolled ? " scrolled" : ""}`}>
       <div className="wrap header-inner">
         <div className="brand">
-          <span className="brand-name">
+          <span className="brand-name" style={{ paddingRight:"14px"}}>
             {site.brand} | من {site.program}
           </span>
         </div>
-        <a className="btn btn-sm" href="#register">
-          سجّل حضورك
-        </a>
+        <div className="actions" style={{ paddingLeft:"14px"}}>
+          <a className="btn btn-sm" href="#register">
+            سجّل حضورك
+          </a>
+        </div>
       </div>
     </header>
   );
