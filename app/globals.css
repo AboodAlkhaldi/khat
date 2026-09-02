@@ -157,6 +157,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 16px;
   padding: 16px 0;
 }
 
@@ -164,6 +165,8 @@ p {
   display: flex;
   align-items: center;
   gap: 14px;
+  flex: 1;
+  min-width: 0;
 }
 
 .brand-name {
@@ -172,12 +175,7 @@ p {
   color: var(--text-faint);
   padding-right: 14px;
   border-right: 1px solid var(--line);
-}
-
-@media (max-width: 560px) {
-  .brand-name {
-    display: none;
-  }
+  white-space: nowrap;
 }
 
 /* ---------------------------------------------------------------- buttons */
@@ -220,6 +218,24 @@ p {
   font-size: 14.5px;
   padding: 11px 22px;
   border-radius: 10px;
+}
+
+@media (max-width: 560px) {
+  .header-inner {
+    gap: 12px;
+  }
+
+  .brand-name {
+    font-size: 12px;
+    padding-right: 0;
+    border-right: 0;
+  }
+
+  .btn-sm {
+    flex: none;
+    font-size: 12.5px;
+    padding: 9px 12px;
+  }
 }
 
 .btn-ghost {
