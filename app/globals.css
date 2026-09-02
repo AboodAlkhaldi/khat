@@ -377,25 +377,10 @@ p {
   margin-top: 3px;
 }
 
-.hero-mark {
-  position: absolute;
-  top: 12%;
-  left: -3%;
-  width: min(480px, 40vw);
-  height: auto;
-  opacity: 0.055;
-  z-index: 1;
-  pointer-events: none;
-  user-select: none;
-}
-
 @media (max-width: 900px) {
   .hero-meta {
     grid-template-columns: 1fr;
     max-width: none;
-  }
-  .hero-mark {
-    display: none;
   }
 }
 

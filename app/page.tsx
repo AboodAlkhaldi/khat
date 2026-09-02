@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SiteHeader from "@/components/SiteHeader";
 import Reveal from "@/components/Reveal";
 import RegistrationForm from "@/components/RegistrationForm";
@@ -50,15 +49,6 @@ export default function Page() {
       <section className="hero">
         <div className="hero-glow" />
         <HeroCircuit />
-        <Image
-          className="hero-mark"
-          src="/logo-light.png"
-          alt=""
-          aria-hidden="true"
-          width={480}
-          height={430}
-          priority
-        />
         <div className="dotgrid a" />
         <div className="dotgrid b" />
 
@@ -305,13 +295,6 @@ export default function Page() {
       {/* ============================== FOOTER ============================== */}
       <footer className="footer">
         <div className="wrap">
-          <Image
-            src="/logo-light.png"
-            alt={site.brand}
-            width={110}
-            height={98}
-            style={{ height: 44, width: "auto" }}
-          />
           <p className="hadith">
             «احرص على ما ينفعك، واستعن بالله ولا تعجز»
           </p>
