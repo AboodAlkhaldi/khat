@@ -65,7 +65,7 @@ export default function Page() {
         <div className="wrap">
           <span className="hero-badge">
             <span className="dot" />
-            أولى لقاءات {site.program}
+            أولى لقاءات {site.brand} | {site.program}
           </span>
 
           <h1>
@@ -316,7 +316,7 @@ export default function Page() {
             «احرص على ما ينفعك، واستعن بالله ولا تعجز»
           </p>
           <p className="rawi">حديث صحيح — رواه مسلم</p>
-          <div className="footer-bottom">{site.program}</div>
+          <div className="footer-bottom">{site.brand} | من {site.program}</div>
         </div>
       </footer>
     </>

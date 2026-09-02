@@ -3,8 +3,8 @@
  */
 
 export const site = {
-  brand: "خَط",
-  program: "قدرات | من خَط",
+  brand: "نفع",
+  program: "سطر",
   eventTitleTop: "أين أنت من",
   eventTitleHighlight: "البرمجة",
 
