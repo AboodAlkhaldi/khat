@@ -26,7 +26,7 @@ export default function SiteHeader() {
             priority
             style={{ height: 44, width: "auto" }}
           />
-          <span className="brand-name">{site.program}</span>
+          <span className="brand-name">{site.brand} | من {site.program}</span>
         </div>
         <a className="btn btn-sm" href="#register">
           سجّل حضورك
