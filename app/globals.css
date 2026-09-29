@@ -892,3 +892,17 @@ select {
 .workshop-date-strip strong{color:var(--green)}.workshop-date-strip span{font-size:13px;color:var(--text-dim)}
 @media(max-width:900px){.workshop-days,.details-grid{grid-template-columns:1fr}.outcomes{grid-template-columns:1fr}.roadmap{grid-template-columns:repeat(2,1fr)}.before-after{grid-template-columns:1fr;padding:28px}.before-after>svg{transform:none;margin:auto}.workshop-date-strip{align-items:flex-start;flex-direction:column}}
 @media(max-width:560px){.roadmap{grid-template-columns:1fr}.day-card{padding:22px}.process{gap:9px}.process b{display:none}}
+
+/* Compact workshop layout */
+.compact-section{padding-top:72px;padding-bottom:72px}
+.audience-tags{display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start}
+.audience-tags span{padding:11px 15px;border:1px solid var(--line);border-radius:999px;background:var(--ink);font-size:14px}
+.compact-roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:34px}
+.compact-roadmap>div{padding:20px;border:1px solid var(--line);border-radius:14px;background:var(--ink)}
+.compact-roadmap span{display:block;color:var(--green);font-size:11px;margin-bottom:24px}.compact-roadmap strong{display:block;font-size:16px}.compact-roadmap p{font-size:13.5px;margin:8px 0 0}
+.ai-note{display:flex;gap:14px;align-items:flex-start;margin-top:12px;padding:18px 20px;border:1px solid rgba(166,216,13,.22);border-radius:14px;background:rgba(166,216,13,.04)}
+.ai-note svg{width:20px;height:20px;color:var(--green);flex:none;margin-top:2px}.ai-note p{margin:0;font-size:14px}
+.closing-card{padding:36px;border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--ink)}
+.closing-card .details-grid{margin-top:28px}.closing-line{max-width:760px;margin:28px 0 0;font-size:clamp(17px,2vw,21px);line-height:1.9}.compact-register{padding-top:72px}
+@media(max-width:900px){.compact-roadmap{grid-template-columns:repeat(2,1fr)}.compact-section{padding-top:58px;padding-bottom:58px}}
+@media(max-width:560px){.compact-roadmap{grid-template-columns:1fr}.closing-card{padding:24px}.compact-section{padding-top:48px;padding-bottom:48px}}
