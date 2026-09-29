@@ -194,27 +194,6 @@ export default function RegistrationForm() {
       </div>
 
       <div className="field">
-        <label>
-          أي الأيام أنسب لك؟ <span className="opt">— اختر خيارًا واحدًا</span>
-        </label>
-        <div className="days">
-          {site.dayOptions.map((d) => (
-            <label className="day" key={d}>
-              <input
-                type="radio"
-                name="days"
-                value={d}
-                checked={values.days === d}
-                onChange={set("days")}
-              />
-              <span>{d}</span>
-            </label>
-          ))}
-        </div>
-        {errors.days && <span className="err">{errors.days}</span>}
-      </div>
-
-      <div className="field">
         <label htmlFor="motivation">ما الذي تريد أن تخرج به من الورشة؟</label>
         <textarea
           id="motivation"
