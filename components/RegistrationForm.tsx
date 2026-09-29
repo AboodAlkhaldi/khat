@@ -122,10 +122,10 @@ export default function RegistrationForm() {
 
   return (
     <form className="formcard" onSubmit={onSubmit} noValidate>
-      <span className="label">٠٤ — التسجيل</span>
+      <span className="label">٠٨ — التسجيل</span>
       <h2>سجّل في الورشة</h2>
       <p style={{ marginBottom: 28 }}>
-        لن نطلب منك الكثير — فقط ما يساعدنا أن نفهم أين تقف الآن.
+        لا تحتاج أن تعرف مسارك الآن، ولا تحتاج أن تكون قد كتبت كودًا من قبل.
       </p>
 
       {formError && <div className="formerr">{formError}</div>}
@@ -251,7 +251,7 @@ export default function RegistrationForm() {
       />
 
       <button className="btn btn-block" type="submit" disabled={status === "sending"}>
-        {status === "sending" ? "جارٍ الإرسال..." : "سجّل الآن"}
+        {status === "sending" ? "جارٍ الإرسال..." : "سجّل في الورشة"}
       </button>
       <p className="formnote">
         العدد محدود حتى تبقى الورشة قريبة من كل مشارك.
