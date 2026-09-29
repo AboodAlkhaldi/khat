@@ -23,7 +23,7 @@ export default function SiteHeader() {
         </div>
         <div className="actions" style={{ paddingLeft:"14px"}}>
           <a className="btn btn-sm" href="#register">
-            سجّل حضورك
+            سجّل في الورشة
           </a>
         </div>
       </div>
