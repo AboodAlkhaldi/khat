@@ -2,7 +2,7 @@ import SiteHeader from "@/components/SiteHeader";
 import Reveal from "@/components/Reveal";
 import RegistrationForm from "@/components/RegistrationForm";
 import { site } from "@/site.config";
-import { IconArrow, IconCode, IconCompass, IconGrowth, IconPerson, IconSpark, IconUsers } from "@/components/Icons";
+import { IconArrow, IconCompass, IconGrowth, IconSpark, IconUsers } from "@/components/Icons";
 
 function HeroCircuit() {
   return (
