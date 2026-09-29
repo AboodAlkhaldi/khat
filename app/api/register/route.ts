@@ -48,7 +48,7 @@ export async function POST(req: Request) {
     whatsapp: clean(body.whatsapp, 30),
     study: clean(body.study, 200),
     level: clean(body.level, 120),
-    days: clean(body.days, 60),
+    days: "الأحد • الثلاثاء • الخميس",
     motivation: clean(body.motivation, 1200),
     question: clean(body.question, 1200),
   };
@@ -59,7 +59,6 @@ export async function POST(req: Request) {
     !/^\+?\d{8,15}$/.test(phone) ||
     data.study.length < 3 ||
     !data.level ||
-    !data.days ||
     data.motivation.length < 5
   ) {
     return NextResponse.json(
