@@ -20,7 +20,7 @@ const empty: Values = {
   whatsapp: "",
   study: "",
   level: "",
-  days: "",
+  days: "الأحد • الثلاثاء • الخميس",
   motivation: "",
   question: "",
   website: "",
@@ -36,7 +36,7 @@ function validate(v: Values): Errors {
     e.whatsapp = "أدخل رقم واتساب صحيحًا (أرقام فقط، ويمكن أن يبدأ بـ +).";
   if (v.study.trim().length < 3) e.study = "اكتب تخصصك وسنتك الدراسية.";
   if (!v.level) e.level = "اختر الوصف الأقرب لوضعك.";
-  if (!v.days) e.days = "اختر الأيام الأنسب لك.";
+
   if (v.motivation.trim().length < 5) e.motivation = "سطر واحد يكفي.";
   return e;
 }
@@ -123,7 +123,7 @@ export default function RegistrationForm() {
   return (
     <form className="formcard" onSubmit={onSubmit} noValidate>
       <span className="label">٠٤ — التسجيل</span>
-      <h2>سجّل حضورك</h2>
+      <h2>سجّل في الورشة</h2>
       <p style={{ marginBottom: 28 }}>
         لن نطلب منك الكثير — فقط ما يساعدنا أن نفهم أين تقف الآن.
       </p>
@@ -215,7 +215,7 @@ export default function RegistrationForm() {
       </div>
 
       <div className="field">
-        <label htmlFor="motivation">ما الذي يجعلك مهتمًا بهذا اللقاء؟</label>
+        <label htmlFor="motivation">ما الذي تريد أن تخرج به من الورشة؟</label>
         <textarea
           id="motivation"
           value={values.motivation}
@@ -228,7 +228,7 @@ export default function RegistrationForm() {
 
       <div className="field">
         <label htmlFor="question">
-          هل هناك شيء محدد تتمنى أن تفهمه عن طريقك في البرمجة؟{" "}
+          هل هناك شيء محدد تتمنى أن تفهمه خلال الورشة؟{" "}
           <span className="opt">— اختياري</span>
         </label>
         <textarea
@@ -254,7 +254,7 @@ export default function RegistrationForm() {
         {status === "sending" ? "جارٍ الإرسال..." : "سجّل الآن"}
       </button>
       <p className="formnote">
-        العدد محدود حتى تبقى الجلسة حوارية وقريبة من كل مشارك.
+        العدد محدود حتى تبقى الورشة قريبة من كل مشارك.
       </p>
     </form>
   );
